@@ -85,6 +85,7 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.5) rotate(-5deg);
 }
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -98,7 +99,7 @@ header .profile-image:hover {
   color: rgb(245, 155, 21);
 }
 .card {
-  margin: 30px;
+  margin: 30px auto;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
@@ -109,6 +110,10 @@ header .profile-image:hover {
 }
 .card:hover {
   border-color: #8945b3;
+}
+
+.card img {
+  width: 100%;
 }
 
 ul.skills {
@@ -176,6 +181,8 @@ a.social:hover {
   clear: both;
 }
 
+
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -186,6 +193,10 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+  }
+
+  .card {
+    margin: 30px;
   }
 
   header {
@@ -218,3 +229,15 @@ a.social:hover {
 
 }
 
+@media screen and (min-width: 1000px) {
+  
+  .project {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+  
+}
